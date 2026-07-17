@@ -8,7 +8,7 @@ const links = [
 export default function Nav({ active, onNavigate, theme, toggleTheme }) {
   return (
     <nav className="navbar">
-      <div className="brand">Rafif Portfolio</div>
+      <div className="brand">Rafif Portofolio</div>
       <ul className="navbar-nav">
         {links.map((link) => (
           <li key={link.id}>
@@ -21,9 +21,9 @@ export default function Nav({ active, onNavigate, theme, toggleTheme }) {
           </li>
         ))}
       </ul>
-      <button 
-        className="theme-toggle" 
-        onClick={toggleTheme} 
+      <button
+        className="theme-toggle"
+        onClick={toggleTheme}
         aria-label="Toggle theme"
       >
         {theme === 'light' ? '🌙' : '☀️'}
