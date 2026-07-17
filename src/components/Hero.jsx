@@ -31,7 +31,7 @@ export default function Hero() {
           <a className="btn btn-primary" href="#projects" onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }) }}>
             View projects →
           </a>
-          <a className="btn btn-ghost" href="/cv-rafif-ramadhani-wibowo.pdf" target="_blank" rel="noreferrer">
+          <a className="btn btn-ghost" href={`${import.meta.env.BASE_URL}cv-rafif-ramadhani-wibowo.pdf`} download="CV-Rafif-Ramadhani-Wibowo.pdf" target="_blank" rel="noreferrer">
             Download CV
           </a>
         </div>
